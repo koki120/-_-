@@ -1,0 +1,10 @@
+{
+  "name": "numerical-analysis",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
