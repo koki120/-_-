@@ -3,7 +3,7 @@ import { trapezoidalRule } from "@/mathematicalFormula/integral";
 import { jacobiMethod } from "@/mathematicalFormula/jacobi";
 import { newtonMethod } from "@/mathematicalFormula/newton";
 
-/* newton_method
+/* ニュートン法
 方程式 2 x**3 + 3 x − 2 = 0．初期値を x [0] = 2, 4 ステップ
 */
 console.log(
@@ -16,7 +16,7 @@ console.log(
   ),
 );
 
-/* jacobi_metho
+/* jacobi法
 連立方程式 2 x_1 − x_2 = 6, x_1 − 2 x_2 = 6,初期値を x_1 [0] = x 2 [0] = 0 ,5 ステップ
 */
 console.log(
@@ -40,7 +40,7 @@ console.log(
   trapezoidalRule(0, 1, 5, (x: number) => 1 / (x ** 2 + 1)),
 );
 
-/**
+/** Euler法
  微分方程式 y′(t)=2ty(t),y(0) = 1 ,刻み幅0.2のときのy(1)
  */
 console.log(
