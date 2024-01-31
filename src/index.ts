@@ -1,3 +1,4 @@
+import { eulerMethod } from "@/mathematicalFormula/differentialEquation";
 import { trapezoidalRule } from "@/mathematicalFormula/integral";
 import { jacobiMethod } from "@/mathematicalFormula/jacobi";
 import { newtonMethod } from "@/mathematicalFormula/newton";
@@ -37,4 +38,12 @@ console.log(
 console.log(
   "trapezoidal rule",
   trapezoidalRule(0, 1, 5, (x: number) => 1 / (x ** 2 + 1)),
+);
+
+/**
+ 微分方程式 y′(t)=2ty(t),y(0) = 1 ,刻み幅0.2のときのy(1)
+ */
+console.log(
+  "euler method",
+  eulerMethod(0, 1, 5, 1, (t: number, y: number) => 2 * t * y),
 );
