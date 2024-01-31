@@ -14,7 +14,7 @@ export const trapezoidalRule = (
 ) => {
   const h = (b - a) / n;
   let I = (h / 2) * (func(a) + func(b));
-  for (let i = 1; i < n - 1; i++) {
+  for (let i = 1; i < n; i++) {
     I += h * func(a + i * h);
   }
   return I;
