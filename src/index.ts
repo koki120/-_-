@@ -3,7 +3,7 @@ import { jacobiMethod } from "@/mathematicalFormula/jacobi";
 import { newtonMethod } from "@/mathematicalFormula/newton";
 
 /* newton_method
-方程式 2 x 3 + 3 x − 2 = 0 を考える．初期値を x [0] = 2 として Newton 法を適用し， 4 ステップ目の近似解 x [4]
+方程式 2 x**3 + 3 x − 2 = 0．初期値を x [0] = 2, 4 ステップ
 */
 console.log(
   "newton method",
@@ -16,7 +16,7 @@ console.log(
 );
 
 /* jacobi_metho
-連立方程式 2 x 1 − x 2 = 6, x 1 − 2 x 2 = 6 を考える．初期値を x 1 [0] = x 2 [0] = 0 として Jacobi 法を適用し， 5 ステップ目 の近似解 x 1 [5], x 2 [5
+連立方程式 2 x_1 − x_2 = 6, x_1 − 2 x_2 = 6,初期値を x_1 [0] = x 2 [0] = 0 ,5 ステップ
 */
 console.log(
   "jacobi method",
@@ -32,7 +32,7 @@ console.log(
 );
 
 /* 台形公式
-積分∫1/(x**2+1)dxを考える．積分区間[0,1]を5等分して台形公式を適用し，この積分の近似値を
+積分∫1/(x**2+1)dx,積分区間[0,1],5等分
  */
 console.log(
   "trapezoidal rule",
